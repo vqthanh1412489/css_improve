@@ -1,0 +1,128 @@
+*{margin: 0; padding: 0;}
+
+.contact .information span.email {
+    color: #1f1f75b0;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.contact .information li {
+    font-size: 12px;
+    list-style: none;
+    margin-top: 14px;
+    font-family: 'Lato';
+}
+
+.contact .information i {
+    font-size: 12px;
+    margin-right: 7px;
+    font-weight: bold;
+}
+
+.contact .information p {
+    font-size: 13px;
+    margin-top: 13px;
+    font-family: 'Lato';
+}
+
+.contact .information h1 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact .information {
+    top: 150px;
+    position: absolute;
+    background-color: #349e49c9;
+    border-left: 8px solid blue;
+    box-shadow: 0 0 8px 0px #f3f3f5;
+    padding: 31px;
+    left: 150px;
+    box-sizing: border-box;
+    animation: showInformation 1s forwards;
+    animation-delay: .5s;
+}
+
+.contact {
+    background-size: cover;
+    background-image: url('https://images.doctruyenhot.com/?url=https://em.wattpad.com/2c614cfc3e2ab2bb15967b3ec0545e5993136d02/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f3577325a6c3771697179536f38673d3d2d3131362e313533666165636663393665656533333838393934353634343533352e6a7067');
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    animation: showContact 1s forwards;
+}
+
+nav.navbar.navbar-default.menu-parent {
+    position: relative;
+    height: 100px;
+    background-color: #57bb2b29;
+    margin-bottom: 0px;
+} 
+
+.menu-right li.nav-item a.nav-link {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #4e635edb;
+    font-size: 20px;
+    padding: 11px;
+    margin: 7px;
+}
+.menu-right li.nav-item a.nav-link:hover {
+    color: blue;
+}
+.menu-right li.nav-item.active a.nav-link {
+    color: blue;
+    background: #57bb2b29;
+}
+
+a.navbar-brand.menu-left {
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: 31px;
+}
+
+.collapse.navbar-collapse.menu-right {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    z-index: 1;
+}
+
+img {
+    width: 100px;
+    height: 90px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes showInformation {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes showContact {
+    from {
+        opacity: 0;
+        transform: scale(1.3);
+    }   
+    to {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+}

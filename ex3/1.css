@@ -1,0 +1,101 @@
+.panel .quickview {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 40px;
+    left: 0;
+    background: #0000007a;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    top: 360px;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+} 
+
+.panel .favorit {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 40px;
+    left: 100%;
+    background: #0000007a;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    transform: translateX(0%);
+    top: 360px;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+
+} 
+
+
+.product {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    top: 20px;
+}
+
+.picture-slide {
+    width: 100%;
+}
+
+.control .btnLeft, .control .btnRight {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 25px;
+    height: 400px;
+    color: white;
+    line-height: 400px;
+    text-align: center;
+}
+
+.control .btnRight {
+    left: 92%;
+}
+
+
+.pictures img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+
+.btnRight:hover {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    
+}
+.btnLeft:hover {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+
+.picture-slide:hover .panel .favorit {
+    transform: translateX(-100%);
+    opacity:1;
+    visibility: visible;
+}
+
+
+.picture-slide:hover .panel .quickview {
+    transform: translateX(0%);
+    opacity:1;
+    visibility: visible;
+}
+
+.quickview:hover, .favorit:hover {
+    cursor:pointer;
+    background: black;
+}
